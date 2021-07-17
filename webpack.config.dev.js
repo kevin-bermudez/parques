@@ -43,7 +43,7 @@ const webpackInitConfig = {
         ],
       },
       {
-        test: /\.sass/,
+        test: /\.scss/,
         exclude: /node_modules/,
         use: [
           MiniCSSExtract.loader,
@@ -68,8 +68,8 @@ const webpackInitConfig = {
   },
   plugins: [
     new HTMLWebpackPlugin({
-        filename: indexOutput, 
-        template: indextInput,
+      filename: indexOutput, 
+      template: indextInput,
     }),
     new MiniCSSExtract({
       filename: '[name].css',

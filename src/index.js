@@ -1,5 +1,5 @@
-import {printBoard} from './app/printBoard'
+import {drawBoard} from './app/draw-board/draw-board';
 
 window.addEventListener('load',() => {
-  printBoard();
-})
+  drawBoard();
+});
